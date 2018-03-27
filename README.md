@@ -66,14 +66,14 @@ And modify the local files.
 
 ## Development
 
-To work on the package you must include in a Rails app using the `file:` form. Each time you make changes to the package you must update it from your Rails app with `yarn upgrade paris-components-poc` and restart your Rails app.
+To work on the package you must add it to a Rails app using the `file:` form described above. Each time you make changes to the package you must update it from your Rails app with `yarn upgrade paris-components-poc` and restart your Rails app.
 
 
 To add a component:
 
 * generate the component in a Rails app
 * move the component's directory into the `frontend/components` directory of this package
-* add its import in `frontend/components/paris/index.js`
+* add its import to `frontend/components/paris/index.js`
 
 ## Contributing
 

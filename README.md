@@ -55,6 +55,15 @@ To change the SCSS variables, copy `paris_components_variables.scss` into your R
 
 And modify it.
 
+## Replacing a component
+
+If you want to override a component, copy it entierly into your Rails app. For example:
+
+    $ mkdir frontend/components/paris
+    $ cp -r node_modules/paris-components-poc/frontend/components/paris/download_button/ frontend/components/paris/
+
+And modify the local files.
+
 ## Development
 
 To work on the package you must include in a Rails app using the `file:` form. Each time you make changes to the package you must update it from your Rails app with `yarn upgrade paris-components-poc` and restart your Rails app.

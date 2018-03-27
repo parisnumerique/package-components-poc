@@ -33,6 +33,14 @@ Add this to your `config/webpacker.yml`:
     - node_modules/paris-components-poc/frontend
 ```
 
+And either load all the Javascript of the components from `frontend/components/index.js`:
+
+    import "components/paris";
+
+Or only the components you use. For example:
+
+    import "components/paris/download_button/paris_download_button.js";
+
 ## Usage
 
 In your view render a component with:

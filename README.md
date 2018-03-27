@@ -35,14 +35,20 @@ Add this to your `config/webpacker.yml`:
 
 ## Usage
 
-TODO: Write usage instructions here
+In your view render a component with:
+
+    <%= component "paris/download_button", href: "http://example.com" %>
 
 ## Development
+
+To work on the package you must include in a Rails app using the `file:` form. Each time you make changes to the package you must update it from your Rails app with `yarn upgrade paris-components-poc` and restart your Rails app.
+
 
 To add a component:
 
 * generate the component in a Rails app
 * move the component's directory into the `frontend/components` directory of this package
+* add its import in `frontend/components/paris/index.js`
 
 ## Contributing
 

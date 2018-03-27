@@ -10,6 +10,12 @@ Add the NPM package to your application:
 yarn add paris-components-poc
 ```
 
+Alternatively you can install from a local directory:
+
+```shell
+yarn add file:../components-poc
+```
+
 Add the included gem in your `Gemfile`:
 
 ```ruby
@@ -19,6 +25,13 @@ gem 'paris-components', path: 'node_modules/paris-components-poc'
 And then execute:
 
     $ bundle
+
+Add this to your `config/webpacker.yml`:
+
+```
+  resolved_paths:
+    - node_modules/paris-components-poc/frontend
+```
 
 ## Usage
 

@@ -39,6 +39,14 @@ In your view render a component with:
 
     <%= component "paris/download_button", href: "http://example.com" %>
 
+## SCSS variables
+
+To change the SCSS variables, copy `paris_components_variables.scss` into your Rails app to override it:
+
+    $ cp node_modules/paris-components-poc/frontend/components/paris_components_variables.scss frontend/components/
+
+And modify it.
+
 ## Development
 
 To work on the package you must include in a Rails app using the `file:` form. Each time you make changes to the package you must update it from your Rails app with `yarn upgrade paris-components-poc` and restart your Rails app.

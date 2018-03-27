@@ -1,8 +1,11 @@
+@import "~components/paris_components_variables";
+
 .paris-download-button {
   display: inline-block;
   border: 1px solid black;
   border-radius: 5px;
   padding: 3px;
+  background: $paris_button_background_color;
   a {
     text-decoration: none;
   }
